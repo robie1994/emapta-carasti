@@ -4,11 +4,13 @@ import { updateImage } from '../utils/Slice';
 import { useDispatch, useSelector } from 'react-redux';
 import ImageDrop from './ImageDrop';
 import ShowImage from './ShowImage';
+import SuccessModal from './SuccessModal';
 
 const PersonalInfo = () => {
-  let { fname, lname, email, bdate, phonenum } = useSelector(
+  let { fname, lname, email, bdate, phonenum, image } = useSelector(
     (state) => state.user,
   );
+  const [isOpen, setIsOpen] = useState(false);
 
   const [userFName, setUserFName] = useState(fname);
   const [userLName, setUserLName] = useState(lname);
@@ -16,7 +18,7 @@ const PersonalInfo = () => {
   const [userBdate, setUserBdate] = useState(bdate);
   const [userPhoneNum, setUserPhoneNum] = useState(phonenum);
 
-  const [imageUrl, setImageUrl] = useState(NoUser); // State to store the uploaded image URL
+  const [imageUrl, setImageUrl] = useState(image ? image : NoUser); // State to store the uploaded image URL
   const dispatch = useDispatch();
 
   const handleOnChange = (field, e) => {
@@ -25,6 +27,20 @@ const PersonalInfo = () => {
     if (field === 'userEmail') setUserEmail(e.target.value);
     if (field === 'userBdate') setUserBdate(e.target.value);
     if (field === 'userPhoneNum') setUserPhoneNum(e.target.value);
+  };
+
+  const handleSave = () => {
+    dispatch(
+      updateImage({
+        fname: userFName,
+        lname: userLName,
+        email: userEmail,
+        image: imageUrl,
+        bdate: userBdate,
+        phonenum: userPhoneNum,
+      }),
+    );
+    setIsOpen(true);
   };
 
   return (
@@ -115,22 +131,12 @@ const PersonalInfo = () => {
             Cancel
           </button>
           <button
-            onClick={() =>
-              dispatch(
-                updateImage({
-                  fname: userFName,
-                  lname: userLName,
-                  email: userEmail,
-                  image: imageUrl,
-                  bdate: userBdate,
-                  phonenum: userPhoneNum,
-                }),
-              )
-            }
+            onClick={handleSave}
             className="rounded-lg bg-sky-600 px-4 py-2 font-bold text-white hover:bg-green-600"
           >
             Save
           </button>
+          <SuccessModal isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
       </div>
     </div>
