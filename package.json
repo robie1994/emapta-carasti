@@ -49,6 +49,7 @@
   },
   "devDependencies": {
     "prettier": "^3.2.5",
-    "prettier-plugin-tailwindcss": "^0.5.12"
+    "prettier-plugin-tailwindcss": "^0.5.12",
+    "redux-mock-store": "^1.5.4"
   }
 }

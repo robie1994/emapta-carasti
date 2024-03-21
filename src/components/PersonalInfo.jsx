@@ -60,12 +60,14 @@ const PersonalInfo = () => {
               value={userFName}
               type="text"
               className="mr-5 w-2/5 max-w-72 rounded-md border border-slate-300 p-2"
+              data-testid="First Name"
             />
             <input
               onChange={(e) => handleOnChange('userLName', e)}
               value={userLName}
               type="text"
               className="mr-5 w-2/5 max-w-72 rounded-md border border-slate-300 p-2"
+              data-testid="Last Name"
             />
           </div>
         </div>
@@ -80,6 +82,7 @@ const PersonalInfo = () => {
               type="email"
               value={userEmail}
               className="w-4/5 rounded-md border border-slate-300 p-2"
+              data-testid="Email Address"
             />
           </div>
         </div>
@@ -103,6 +106,7 @@ const PersonalInfo = () => {
               value={userBdate}
               type="text"
               className="w-4/5 rounded-md border border-slate-300 p-2"
+              data-testid="Date of Birth"
             />
           </div>
         </div>
@@ -120,6 +124,7 @@ const PersonalInfo = () => {
               type="text"
               className="h-10 w-3/5 rounded-r-lg
               border border-slate-300 p-2"
+              data-testid="Phone Number"
             />
           </div>
         </div>

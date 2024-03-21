@@ -34,6 +34,7 @@ const ImageDrop = ({ imageUrl, handleSetImage }) => {
           onChange={handleFileUpload}
           className="hidden"
           id="imageUpload"
+          data-testid="imageUpload"
         />
         <label
           htmlFor="imageUpload"

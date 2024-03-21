@@ -22,7 +22,7 @@ const SidebarFooter = () => {
         <div className="text-md flex w-11/12 flex-col p-2">
           <div className="w-full">
             <p>
-              {fname} {lname}
+              <span data-testid="fname">{fname}</span> <span>{lname}</span>
             </p>
           </div>
           <div className="w-full">
