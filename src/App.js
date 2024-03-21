@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import UserAccount from "./components/UserAccount";
+import MyProfile from "./components/MyProfile";
+import UnderConstruction from "./components/UnderConstruction";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<UserAccount />}>
+          <Route index element={<MyProfile />} />
+          <Route path="/mybookings" element={<UnderConstruction />} />
+          <Route path="/mywallet" element={<UnderConstruction />} />
+          <Route path="/settings" element={<UnderConstruction />} />
+          <Route path="/support" element={<UnderConstruction />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
