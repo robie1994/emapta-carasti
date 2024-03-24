@@ -59,14 +59,14 @@ const PersonalInfo = () => {
               onChange={(e) => handleOnChange('userFName', e)}
               value={userFName}
               type="text"
-              className="mr-5 w-2/5 max-w-72 rounded-md border border-slate-300 p-2"
+              className="mr-[1%] w-[35%] rounded-md border border-slate-300 p-2"
               data-testid="First Name"
             />
             <input
               onChange={(e) => handleOnChange('userLName', e)}
               value={userLName}
               type="text"
-              className="mr-5 w-2/5 max-w-72 rounded-md border border-slate-300 p-2"
+              className="w-[35%] rounded-md border border-slate-300 p-2"
               data-testid="Last Name"
             />
           </div>
@@ -81,7 +81,7 @@ const PersonalInfo = () => {
               onChange={(e) => handleOnChange('userEmail', e)}
               type="email"
               value={userEmail}
-              className="w-4/5 rounded-md border border-slate-300 p-2"
+              className="w-[71%] rounded-md border border-slate-300 p-2"
               data-testid="Email Address"
             />
           </div>
@@ -105,7 +105,7 @@ const PersonalInfo = () => {
               onChange={(e) => handleOnChange('userBdate', e)}
               value={userBdate}
               type="text"
-              className="w-4/5 rounded-md border border-slate-300 p-2"
+              className="w-[71%] rounded-md border border-slate-300 p-2"
               data-testid="Date of Birth"
             />
           </div>
@@ -115,14 +115,14 @@ const PersonalInfo = () => {
         <div className="flex">
           <div className="w-1/4">Phone Number</div>
           <div className="w-3/4">
-            <select className="h-10 w-1/5 rounded-l-lg border border-slate-300 text-center">
+            <select className="h-10 w-[10%] rounded-l-lg border border-slate-300 text-center">
               <option value="AE">AE</option>
             </select>
             <input
               onChange={(e) => handleOnChange('userPhoneNum', e)}
               value={userPhoneNum}
               type="text"
-              className="h-10 w-3/5 rounded-r-lg
+              className="h-10 w-[61%] rounded-r-lg
               border border-slate-300 p-2"
               data-testid="Phone Number"
             />

@@ -16,7 +16,7 @@ const ImageDrop = ({ imageUrl, handleSetImage }) => {
   return (
     <div className="flex w-3/4 ">
       <div
-        className="mx-5 h-16 w-16 rounded-full "
+        className="mr-[1%] h-12 w-12 rounded-full "
         style={{
           backgroundImage: `url(${imageUrl})`,
           backgroundSize: 'cover',
@@ -24,7 +24,7 @@ const ImageDrop = ({ imageUrl, handleSetImage }) => {
         }}
       ></div>
       <div
-        className="flex w-8/12 items-center
+        className="flex w-[63%] items-center
              justify-center rounded-xl border
              border-sky-500 px-2 py-3"
       >
@@ -48,8 +48,8 @@ const ImageDrop = ({ imageUrl, handleSetImage }) => {
               <CircleAlert />
             </span>
           </div>
-          <div className="flex w-full  px-2">
-            <div className="text-md flex w-11/12 flex-col">
+          <div className="flex w-full px-2">
+            <div className="flex w-11/12 flex-col text-sm">
               <div className="w-full ">
                 <p>
                   <span className="font-semibold text-cyan-500">
