@@ -46,14 +46,14 @@ const PersonalInfo = () => {
   return (
     <div className="w-10/12">
       <div>
-        <p className="text-xl">Personal Info</p>
-        <p className="text-slate-400">
+        <p className="text-[16px] font-semibold">Personal Info</p>
+        <p className="text-[12px] text-slate-400">
           Update your photo and personal details here.
         </p>
       </div>
-      <div className="mt-10 border-t-2 py-5">
+      <div className="mt-2 border-t-2 py-4 ">
         <div className="flex">
-          <div className="w-1/4">Name</div>
+          <div className="w-1/4 font-semibold text-zinc-600">Name</div>
           <div className="w-3/4">
             <input
               onChange={(e) => handleOnChange('userFName', e)}
@@ -73,9 +73,9 @@ const PersonalInfo = () => {
         </div>
       </div>
 
-      <div className="border-t-2 py-5">
+      <div className="border-t-2 py-4">
         <div className="flex">
-          <div className="w-1/4">Email Address</div>
+          <div className="w-1/4 font-semibold text-zinc-600">Email Address</div>
           <div className="w-3/4">
             <input
               onChange={(e) => handleOnChange('userEmail', e)}
@@ -88,7 +88,7 @@ const PersonalInfo = () => {
         </div>
       </div>
 
-      <div className="flex w-auto border-t-2 py-5">
+      <div className="flex w-auto border-t-2 py-4">
         <div className="flex w-full ">
           <ShowImage />
           <ImageDrop
@@ -97,9 +97,9 @@ const PersonalInfo = () => {
           />
         </div>
       </div>
-      <div className="border-t-2 py-5">
+      <div className="border-t-2 py-4">
         <div className="flex">
-          <div className="w-1/4">Date of Birth</div>
+          <div className="w-1/4 font-semibold text-zinc-600">Date of Birth</div>
           <div className="w-3/4">
             <input
               onChange={(e) => handleOnChange('userBdate', e)}
@@ -111,9 +111,9 @@ const PersonalInfo = () => {
           </div>
         </div>
       </div>
-      <div className="border-t-2 py-5">
+      <div className="border-t-2 py-4">
         <div className="flex">
-          <div className="w-1/4">Phone Number</div>
+          <div className="w-1/4 font-semibold text-zinc-600">Phone Number</div>
           <div className="w-3/4">
             <select className="h-10 w-[10%] rounded-l-lg border border-slate-300 text-center">
               <option value="AE">AE</option>
@@ -129,7 +129,7 @@ const PersonalInfo = () => {
           </div>
         </div>
       </div>
-      <div className="border-t-2 py-5">
+      <div className="border-t-2 py-4">
         <div className="flex justify-end">
           <div className="flex-grow"></div>
           <button className="mr-4 rounded-lg border border-slate-300 px-4 py-2 font-bold text-slate-600 hover:bg-red-600">

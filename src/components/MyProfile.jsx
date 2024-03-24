@@ -16,8 +16,8 @@ const MyProfile = () => {
     <div className=" h-5/6 w-3/4 px-5 pb-2 pt-6 ">
       <div className="border-r-1 h-full overflow-auto rounded-md border bg-white p-5">
         <p className="text-xl font-bold">{headerText}</p>
-        <div className="flex w-auto pr-4 pt-5 ">
-          <div className=" flex w-11/12 flex-col gap-y-2 ">
+        <div className="flex w-auto pr-4 pt-3 ">
+          <div className="flex w-11/12 flex-col gap-y-2 text-sm">
             <UserTabs
               selectedTab={selectedTab}
               setSelected={(index) => setSelectedTab(index)}

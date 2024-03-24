@@ -7,7 +7,7 @@ const UserAccount = () => {
   return (
     <div>
       <Header />
-      <div className="flex h-screen bg-slate-50 p-10 ">
+      <div className="flex h-screen bg-slate-50 px-10 ">
         <Sidebar />
         {<Outlet />}
       </div>

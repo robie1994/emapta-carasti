@@ -5,8 +5,10 @@ const ShowImage = () => {
   return (
     <div className="flex w-1/4 flex-col ">
       <div className="flex">
-        <div className="mr-2 flex-shrink-0">Your photo</div>
-        <div className="p-1">
+        <div className="mr-2 flex-shrink-0 font-semibold text-zinc-600">
+          Your photo
+        </div>
+        <div className="px-1">
           <CircleHelp size={16} />
         </div>
       </div>

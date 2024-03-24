@@ -8,8 +8,8 @@ const UserTabs = ({ selectedTab, setSelected }) => {
         <button
           key={index}
           onClick={() => setSelected(index)}
-          className={`m-1 h-10 w-auto min-w-24 rounded px-2 text-center hover:bg-slate-300 
-      ${selectedTab === index ? ' rounded-md bg-white font-semibold text-zinc-600 shadow-lg' : ''} `}
+          className={`m-1 h-8 w-auto min-w-24 rounded px-2 text-center font-semibold hover:bg-slate-300 
+      ${selectedTab === index ? ' rounded-md bg-white  text-zinc-800 shadow-lg' : ''} `}
         >
           {item.name}
         </button>
