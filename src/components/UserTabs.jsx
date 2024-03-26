@@ -3,7 +3,7 @@ import { tabOptions } from '../utils/utils';
 
 const UserTabs = ({ selectedTab, setSelected }) => {
   return (
-    <div className="h-18 w-autoflex  rounded border bg-slate-50 p-2 font-medium text-zinc-500">
+    <div className="h-18 w-autoflex flex flex-col rounded border bg-slate-50 p-2 font-medium text-zinc-500 md:flex-row">
       {tabOptions?.map((item, index) => (
         <button
           key={index}

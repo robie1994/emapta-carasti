@@ -5,9 +5,9 @@ import Footer from './Footer';
 import { Outlet } from 'react-router-dom';
 const UserAccount = () => {
   return (
-    <div>
+    <div className="flex flex-col">
       <Header />
-      <div className="flex h-screen bg-slate-50 px-10 ">
+      <div className="flex h-screen w-full flex-col justify-center bg-slate-50 px-4 pt-6 md:flex-row">
         <Sidebar />
         {<Outlet />}
       </div>
