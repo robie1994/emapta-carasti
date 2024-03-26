@@ -4,12 +4,12 @@ import Chart from './Chart';
 import { salikCharges } from '../utils/utils';
 const Fines = () => {
   return (
-    <div className="h-24 w-3/4 rounded-md border border-slate-300 p-2">
+    <div className="min-h-24 min-w-[3/4] rounded-md border border-slate-300 p-2">
       <div className="flex">
         <div className="w-5/6 ">Fines</div>
         <div className=" text-sm text-zinc-500">2023</div>
       </div>
-      <div className="flex">
+      <div className="flex flex-col md:flex-row  ">
         <div className="w-3/4">
           <div className="text-xl font-bold">AED 3,000</div>
           <div className="flex text-sm">
