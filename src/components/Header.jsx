@@ -52,7 +52,7 @@ const Header = () => {
                 FlyoutContent={DummyContent}
                 onClick={() => navigate('/')}
               >
-                <div className="flex w-16 rounded-full bg-slate-200">
+                <div className=" flex w-16 rounded-full bg-slate-200">
                   <div className="h-8 w-9 rounded-full bg-sky-600 p-1 text-white">
                     MM
                   </div>
